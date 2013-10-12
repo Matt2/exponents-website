@@ -1,3 +1,33 @@
 p{
-	text-indent: .5em;
+    text-indent: .5em;
+}
+
+.top-bar{
+    background-color:#cd0000;
+}
+
+.top-bar-section li a:not(.button) {
+    background-color:#cc0000;
+}
+
+.top-bar-section li a:not(.button):hover {
+    background-color:#aa0000;
+}
+
+.top-bar-section > ul > .divider {
+    border-right: solid 1px #bb0000;
+    border-left: solid 1px #aa0000;
+}
+
+.panel-list{
+    list-style-position:inside;
+}
+
+.list-header{
+    float:left;
+}
+
+.list-with-header{
+    clear:both;
+    margin-left:22px;
 }
