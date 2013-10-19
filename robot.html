@@ -44,7 +44,7 @@
         <li class="divider"></li>
         <li><a href="robot.html">Our Robot</a></li>
         <li class="divider"></li>
-        <li><a href="#">Outreach</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
         <li class="divider"></li>
       </ul>
     </section>
@@ -69,7 +69,7 @@
       <div class="row">
         <div class="large-12 columns">
           <p>The original robot base was simply a motor mounted vertically into an aluminum motor hub.  The motor hub was attached to the platform that would be attached to the trolley.  The top of the motor was mounted to the rest of the robot, and allowed to turn via a lazy susan.  Because of imprecision with the placement of the motor hub, the mount was left loose so it could turn slightly and rotate without sticking.  While this worked for test drive, the motor hub's uncentered placement caused issues, such as inconsistant speed and wobbling</p>
-          <p>A new base was designed putting an internally toothed spur-gear and pinion system inside the lazy susan, to which the motor would attach and turn the robot without wobble.  The motor would attach to the pinion and transfer a larger force to the internally toothed spur-gear.  This allows for more power and stability in turning the robot, eliminating the problems we had with a lazy-susan and partially-centered motor hub.</p>
+          <p>A <a href="#" data-reveal-id="newBaseModal">new base</a> was designed putting an internally toothed spur-gear and pinion system inside the lazy susan, to which the motor would attach and turn the robot without wobble.  The motor would attach to the pinion and transfer a larger force to the internally toothed spur-gear.  This allows for more power and stability in turning the robot, eliminating the problems we had with a lazy-susan and partially-centered motor hub.</p>
         </div>
       </div>
     </div>
@@ -80,15 +80,30 @@
 
   <div class="row">
     <div class="large-8 columns">
-      <h4>This is a content section.</h4>
+      <h4>The Arm</h4>
 
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-
-      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+      <p>The original arm was created with weight in mind.  We decided to use gravity to our advantage, and pull the arm down with the motor.  The arm would then be pulled back up with the bungee cords on the back.  This worked great in theory, but we encountered problems during test drive day.  The inconsistant pull of the bungee cord made the arm bounce when extended and pointed downward, but loosening the bungee made it impossible to get the arm to point upwards as much as needed.  We attempted to double the length of the bungee by looping it through an eye-bolt and back up to the top of the robot, but the friction was to great for this to give any advantage.</p>
+      <p>To get length, we placed one pvc pipe inside of another and looped string around it.  However, on test drive we realized that the arm wasn't long enough, despite our previous calculations.</p>
+      <p>The arm was completely redesigned.  A block-and-tackle system was designed to lift the arm with strength, and speed is not an issue since the arm shouldn't need to lift or lower very much.  Additionally, instead of the two-part extendable arm, we went with three parts, which slide against each other using the Igus parts and a string system.  The new arm should provide more stability, strength, as well as adequate length to preform all necessary tasks of the competition.</p>
 
     </div>
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]">
+      <a href="#" data-reveal-id="armModal"><img src="photos/armthumb.jpg"></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <a href="#" data-reveal-id="baseModal"><img src="photos/basethumb.jpg"></a>
+    </div>
+    <div class="large-8 columns">
+      <h4>The Claw</h4>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>The claw was thought out to preform all functions.  A flat thumb and a bend to more easily grip the transistor container was created, and on the other side was a hook to manipulate the hangers.  A motor was attached to the side to rotate the claw between the grabber and hook side.</p>
+          <p>At test drive it was determined that the hook was unnecessary, as the grabber manipulated the hangers fine, but a finger attachment in place of the hook was found to be helpful in placing the CPU pieces in their reciprocals.</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -100,15 +115,7 @@
       <hr />
       <div class="row">
         <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
+          <p>Exponents Robotics</p>
         </div>
       </div>
     </div>
@@ -118,6 +125,18 @@
   <div id="baseModal" class="reveal-modal medium">
     <h2>The original base</h2>
     <img src="photos/base.jpg">
+    <a class="close-reveal-modal">&times;</a>
+  </div>
+
+  <div id="newBaseModal" class="reveal-modal medium">
+    <h2>The new base</h2>
+    <img src="photos/gearbase.jpg">
+    <a class="close-reveal-modal">&times;</a>
+  </div>
+
+  <div id="armModal" class="reveal-modal medium">
+    <h2>The original arm</h2>
+    <img src="photos/arm.jpg">
     <a class="close-reveal-modal">&times;</a>
   </div>
 
